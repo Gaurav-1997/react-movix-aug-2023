@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import Img from "../../../components/lazyLoadImage/Img";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 
-const heroBanner = () => {
+const HeroBanner = () => {
   const [background, setBackground] = useState("");
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
@@ -60,4 +60,4 @@ const heroBanner = () => {
   );
 };
 
-export default heroBanner;
+export default HeroBanner;
