@@ -1,0 +1,13 @@
+.genres{
+    display: flex;
+    gap: 5px;
+    .genre{
+        background-color: var(--black-light);
+        padding: 3px 5px;
+        font-style: 12px;
+        border-radius: 5px;
+        color: white;
+        // if text is lengthy  it will remain in one line without breaking
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,41 @@
+// this css will be applied when screen size is greater than 640px
+@mixin sm{
+    @media only screen and (min-width: 640px){
+        @content;
+    }
+}
+
+// this css will be applied when screen size is greater than 768px
+@mixin md {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+// this css will be applied when screen size is greater than 1024px
+@mixin lg {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+// this css will be applied when screen size is greater than 1280px
+@mixin xl {
+    @media only screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+// this css will be applied when screen size is greater than 1536px
+@mixin xxl {
+    @media only screen and (min-width: 1536px) {
+        @content;
+    }
+}
+
+@mixin ellipsis($line: 2){
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
