@@ -13,7 +13,7 @@ import CircleRating from "../circleRating/CircleRating";
 import Genres from "../genres/Genres";
 
 import "./style.scss";
-import ContentWrapper from "../contentWrapper/contentWrapper";
+import ContentWrapper from "../contentWrapper/ContentWrapper";
 
 const Carousel = ({ data, loading, endpoint, title }) => {
   // to get the reference of any div or element

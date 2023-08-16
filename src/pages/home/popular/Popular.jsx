@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import ContentWrapper from "../../../components/contentWrapper/contentWrapper";
+import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import SwitchTabs from "../../../components/switchTabs/SwitchTabs";
 import useFetch from "../../../hooks/useFetch";
 import Carousel from "../../../components/carousel/Carousel";
@@ -21,7 +21,7 @@ const Popular = () => {
         <span className="carouselTitle">What's Popular</span>
         <SwitchTabs data={["Movies", "TV Shows"]} onTabChange={onTabChange} />
       </ContentWrapper>
-      <Carousel data={data?.results} loading={loading} endpoint={endpoint}/>
+      <Carousel data={data?.results} loading={loading} endpoint={endpoint} />
     </div>
   );
 };
