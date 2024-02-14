@@ -10,16 +10,15 @@ const headers = {
   Authorization: "bearer " + TMDB_TOKEN,
 };
 
-export const getDataFromApi = async (url, params)=>{
-  // console.log( `url ${BASE_URL}${url}`);
+export const getDataFromApi = async (url, params) => {
   try {
-    const {data} = await axios.get(BASE_URL + url, {
-      headers:headers,
-      params: params
-    })
+    const { data } = await axios.get(BASE_URL + url, {
+      headers: headers,
+      params: params,
+    });
     return data;
   } catch (error) {
-    console.log(error)
-    return error
+    console.log(error);
+    return error;
   }
-}
+};

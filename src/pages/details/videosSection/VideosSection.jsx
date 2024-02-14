@@ -11,8 +11,6 @@ const VideosSection = ({ data, loading }) => {
   const [show, setShow] = useState(false);
   const [videoId, setVideoId] = useState(null);
 
-  //   console.log(data)
-
   const loadingSkeleton = () => {
     return (
       <div className="skItem">
@@ -44,13 +42,11 @@ const VideosSection = ({ data, loading }) => {
                 >
                   <div className="videoThumbnail">
                     <Img
-                    src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}
-                  />
+                      src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}
+                    />
                     <PlayButton />
                   </div>
-                  <div className="videoTitle">
-                    {video.name}
-                  </div>
+                  <div className="videoTitle">{video.name}</div>
                 </div>
               );
             })}

@@ -16,9 +16,7 @@ import "./style.scss";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 
 const Carousel = ({ data, loading, endpoint, title }) => {
-  // to get the reference of any div or element
   const carouselContainer = useRef();
-  // console.log(caroueslContainer.current);
 
   const { assetUrl } = useSelector((state) => state.home);
   const navigate = useNavigate();

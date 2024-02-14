@@ -10,13 +10,6 @@ import avatar from "../../../assets/avatar.png";
 const Cast = ({ data, loading }) => {
   const { assetUrl } = useSelector((state) => state.home);
 
-  // console.log("data: "+data?.[0].character);
- 
-  // data?.map(element => {
-  //   console.log(element)
-  // });
-
-
   const skeleton = () => {
     return (
       <div className="skItem">
@@ -32,20 +25,19 @@ const Cast = ({ data, loading }) => {
         <div className="sectionHeading">Top Cast</div>
         {!loading ? (
           <div className="listItems">
-            {data?.map((item)=>{
-              // console.log("item: ", item.profile_path, assetUrl.profile);
-              // console.log("loading:", loading);
+            {data?.map((item) => {
               let imgUrl = item.profile_path
                 ? assetUrl.profile + item.profile_path
                 : avatar;
-              // console.log(imgUrl);  
-              return(<div key={item.id} className="listItem">
-                <div className="profileImg">
-                  <Img src={imgUrl} />
+              return (
+                <div key={item.id} className="listItem">
+                  <div className="profileImg">
+                    <Img src={imgUrl} />
+                  </div>
+                  <div className="name">{item.name}</div>
+                  <div className="character">{item.character}</div>
                 </div>
-                <div className="name">{item.name}</div>
-                <div className="character">{item.character}</div>
-              </div>);
+              );
             })}
           </div>
         ) : (
