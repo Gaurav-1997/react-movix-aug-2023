@@ -40,7 +40,7 @@ const Footer = () => {
             <FaTwitter />
           </span>
           <span className="icon">
-            <FaLinkedin />
+            <FaLinkedin href="https://www.linkedin.com/in/vishwakarma-gaurav/"/>
           </span>
         </div>
       </ContentWrapper>

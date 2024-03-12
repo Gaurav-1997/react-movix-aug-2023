@@ -1,5 +1,4 @@
 import axios from "axios";
-// import { api_key } from "./helper";
 
 const BASE_URL = "https://api.themoviedb.org/3";
 
