@@ -4,9 +4,8 @@ import { useParams } from "react-router-dom";
 import "./style.scss";
 
 import InfiniteScroll from "react-infinite-scroll-component";
-import noresults from "../../assets/no-results.png";
 import { getDataFromApi } from "../../utils/api";
-import ContentWrapper from "../../components/contentWrapper/contentWrapper";
+import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import Spinner from "../../components/spinner/Spinner";
 import MovieCard from "../../components/movieCard/MoveCard";
 
