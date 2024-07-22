@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import SwitchTabs from "../../../components/switchTabs/SwitchTabs";
@@ -7,7 +7,7 @@ import Carousel from "../../../components/carousel/Carousel";
 
 const Popular = () => {
   //when the page loads trending will show moves day-wise
-  const [endpoint, setEndpoint] = useState("movie");
+  const [endpoint, setEndpoint] = React.useState("movie");
 
   const { data, loading } = useFetch(`/${endpoint}/popular`);
 

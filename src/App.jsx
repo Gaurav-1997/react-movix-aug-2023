@@ -1,21 +1,19 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { getDataFromApi } from "./utils/api";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getApiConfiguration, getGenres } from "./store/homeSlice";
 
-// import Home from "./pages/home/home";
 import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer";
-import Details from "./pages/details/Details";
+import Details from "./pages/details/Details.jsx";
 import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
 import PageNotFound from "./pages/404/PageNotFound";
-import Home from "./pages/home/Home";
+import Home from "./pages/home/Home.jsx";
 
 function App() {
   const dispatch = useDispatch();
-  const { assetUrl } = useSelector((state) => state.home);
 
   useEffect(() => {
     getApiConfig();
