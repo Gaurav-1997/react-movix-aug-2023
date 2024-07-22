@@ -6,7 +6,7 @@ import Trending from "./trending/Trending";
 import Popular from "./popular/Popular";
 import TopRated from "./topRated/TopRated";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="homePage">
       <HeroBanner />
@@ -17,4 +17,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default HomePage;
